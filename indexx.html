@@ -4,35 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Application</title>
-    <link rel="stylesheet" href="stlye.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Quiz Application</h1>
-        <form id="quizForm">
+        <form id="quizForm" onsubmit="evaluateQuiz()">
             <label for="topic">Topic:</label>
             <input type="text" id="topic" name="topic" required><br><br>
 
             <h2>Questions:</h2>
 
             <div class="question">
-                <p>1. What is the capital of Pakistan?</p>
-                <input type="radio" id="q1-option1" name="q1" value="Dehli" required>
+                <p>1. What is the capital of France?</p>
+                <input type="radio" id="q1-option1" name="q1" value="Paris" required>
                 <label for="q1-option1">Paris</label><br>
-                <input type="radio" id="q1-option2" name="q1" value="Islamadad">
+                <input type="radio" id="q1-option2" name="q1" value="London">
                 <label for="q1-option2">London</label><br>
-                <input type="radio" id="q1-option3" name="q1" value="Dahka">
+                <input type="radio" id="q1-option3" name="q1" value="Berlin">
                 <label for="q1-option3">Berlin</label><br>
-                <input type="radio" id="q1-option4" name="q1" value="Kabul">
-                <label for="q1-option4">Islamadad</label><br>
+                <input type="radio" id="q1-option4" name="q1" value="Rome">
+                <label for="q1-option4">Rome</label><br>
             </div>
 
-            <!-- Add more questions similarly -->
+            <div class="question">
+                <p>2. What is the largest planet in our solar system?</p>
+                <input type="radio" id="q2-option1" name="q2" value="Mercury">
+                <label for="q2-option1">Mercury</label><br>
+                <input type="radio" id="q2-option2" name="q2" value="Venus">
+                <label for="q2-option2">Venus</label><br>
+                <input type="radio" id="q2-option3" name="q2" value="Jupiter" required>
+                <label for="q2-option3">Jupiter</label><br>
+                <input type="radio" id="q2-option4" name="q2" value="Saturn">
+                <label for="q2-option4">Saturn</label><br>
+            </div>
 
-            <button type="submit">Submit Quiz</button>
+            <div class="question">
+                <p>3. What is the chemical symbol for water?</p>
+                <input type="radio" id="q3-option1" name="q3" value="O2">
+                <label for="q3-option1">O2</label><br>
+                <input type="radio" id="q3-option2" name="q3" value="CO2">
+                <label for="q3-option2">CO2</label><br>
+                <input type="radio" id="q3-option3" name="q3" value="H2O" required>
+                <label for="q3-option3">H2O</label><br>
+                <input type="radio" id="q3-option4" name="q3" value="CH4">
+                <label for="q3-option4">CH4</label><br>
+            </div>
+
+            <div class="question">
+                <p>4. Which of the following is a primary color?</p>
+                <input type="radio" id="q4-option1" name="q4" value="Green">
+                <label for="q4-option1">Green</label><br>
+                <input type="radio" id="q4-option2" name="q4" value="Orange">
+                <label for="q4-option2">Orange</label><br>
+                <input type="radio" id="q4-option3" name="q4" value="Blue" required>
+                <label for="q4-option3">Blue</label><br>
+                <input type="radio" id="q4-option4" name="q4" value="Pink">
+                <label for="q4-option4">Pink</label><br>
+            </div>
+
+            <div class="question">
+                <p>5. Who wrote 'Romeo and Juliet'?</p>
+                <input type="radio" id="q5-option1" name="q5" value="William Shakespeare" required>
+                <label for="q5-option1">William Shakespeare</label><br>
+                <input type="radio" id="q5-option2" name="q5" value="Charles Dickens">
+                <label for="q5-option2">Charles Dickens</label><br>
+                <input type="radio" id="q5-option3" name="q5" value="Jane Austen">
+                <label for="q5-option3">Jane Austen</label><br>
+                <input type="radio" id="q5-option4" name="q5" value="Mark Twain">
+                <label for="q5-option4">Mark Twain</label><br>
+            </div>
+
+            <button  type="submit"><a href="indexxx.html">Submit Quiz</a></button>
+            <!-- <a href="indexxx.html" class="btn">submit</a> -->
         </form>
     </div>
-
-    <script src="script.js"></script>
+    
+    <script src="first.js"></script>
 </body>
 </html>
+
