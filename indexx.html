@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Application</h1>
+        <form id="quizForm">
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic" name="topic" required><br><br>
+
+            <h2>Questions:</h2>
+
+            <div class="question">
+                <p>1. What is the capital of Pakistan?</p>
+                <input type="radio" id="q1-option1" name="q1" value="Dehli" required>
+                <label for="q1-option1">Paris</label><br>
+                <input type="radio" id="q1-option2" name="q1" value="Islamadad">
+                <label for="q1-option2">London</label><br>
+                <input type="radio" id="q1-option3" name="q1" value="Dahka">
+                <label for="q1-option3">Berlin</label><br>
+                <input type="radio" id="q1-option4" name="q1" value="Kabul">
+                <label for="q1-option4">Islamadad</label><br>
+            </div>
+
+            <!-- Add more questions similarly -->
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
